@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-area"></div>
+        <div id="menu">
+            <h2>Snake Game</h2>
+            <div id="scores">
+                <p>Best: <span id="bestScore">0</span></p>
+                <p>Score: <span id="currentScore">0</span></p>
+            </div>
+            <div id="modes">
+                <div class="radio-container"><input type="radio" name="mode" value="classic" checked> 
+                    <span class="input-text">Classic</span>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="mode" value="noDie"> 
+                    <span class="input-text">No Die</span>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="mode" value="walls">
+                    <span class="input-text">Walls</span>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="mode" value="portal"> 
+                    <span class="input-text">Portal</span>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="mode" value="speed">
+                    <span class="input-text">Speed</span>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="menuBtn" style="display: none;">Menu</button>
+                <button id="playBtn">Play</button>
+                <button id="exitBtn">Exit</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.1/pixi.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
